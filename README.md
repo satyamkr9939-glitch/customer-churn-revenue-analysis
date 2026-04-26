@@ -1,108 +1,166 @@
-# 🚀 Customer Churn & Revenue Loss Analysis
+# 📊 Customer Churn & Revenue Impact Analysis (SQL + Power BI)
 
-> 🔍 Identified **33% churn rate** causing **₹99M+ revenue loss** using SQL-based analysis on 100K+ customer records
+![Dashboard] 
+
+🚀 Analyzed customer churn patterns and identified **high-risk segments impacting revenue**
+💡 Built a data-driven solution to **reduce churn and improve retention strategy**
 
 ---
 
-## 📌 Project Overview
+## 💣 Why This Matters
 
-This project analyzes customer churn behavior to uncover **revenue loss drivers, high-risk customer segments, and data-backed retention strategies**.
+Customer acquisition costs are **5–6x higher than retention**, making churn one of the biggest hidden revenue risks ([arXiv][1])
 
-The analysis focuses on answering:
-- Why are customers leaving?
-- Which customers are most valuable?
-- How much revenue is being lost due to churn?
+👉 Even small improvements in retention can significantly increase profitability.
 
 ---
 
 ## 🎯 Business Objective
 
-- Identify churn patterns and key drivers  
-- Quantify **revenue loss due to churn**  
-- Detect high-value customer risk  
-- Provide actionable retention strategies  
+* Identify customers likely to churn
+* Understand drivers of churn
+* Quantify revenue impact
+* Recommend retention strategies
 
 ---
 
-## 📊 Dataset
+## 📊 Key Insights
 
-- Source: Synthetic Telco Customer Dataset (100,000 records)  
-- Features include:
-  - Customer demographics  
-  - Tenure  
-  - Monthly & total charges  
-  - Contract type  
-  - Payment method  
-  - Churn status  
+### 🔴 KPI Snapshot
+
+* Total Customers: XXXX
+* Churned Customers: XXXX
+* Churn Rate: **~XX%**
 
 ---
 
-## 🧹 Data Cleaning
+### 📉 Revenue Impact
 
-- Handled missing values in `TotalCharges`  
-- Converted data types for accurate calculations  
-- Checked for duplicates and inconsistencies  
+* High churn segments contribute significantly to revenue loss
+* Long-tenure customers generate more value but churn less
 
----
-
-## 📈 Key Metrics
-
-- 👥 Total Customers: **100,000**  
-- 📉 Churn Rate: **33.14%**  
-- 💰 Total Revenue: **₹292.6M**  
-- 💸 Revenue Lost: **₹99.7M (~34%)**
+👉 Shows importance of **targeted retention strategies**
 
 ---
 
-## 🔍 Key Insights
+### 👥 Customer Segmentation
 
-### 🚨 1. High Churn Problem
-> 1 out of every 3 customers is leaving, indicating a major retention issue.
+![Segment](dashboard/screenshots/segment_analysis.png)
 
----
+* High churn observed in:
 
-### 💸 2. High-Value Customers Drive Loss
-- ₹85M+ loss from high-value segment  
-- **~86% of total revenue loss**
+  * Low tenure customers
+  * High monthly charges segment
 
-> High-value customers are the primary contributors to revenue loss.
+👉 Indicates **pricing sensitivity + onboarding issues**
 
 ---
 
-### 📉 3. Contract Type is the Main Driver
-- Month-to-month churn: **~47%**  
-- Long-term churn: **~16–18%**
+### 📊 Behavioral Drivers
 
-> Month-to-month customers churn nearly **3x more** than long-term users.
+![Drivers](dashboard/screenshots/drivers.png)
 
----
+Key churn drivers:
 
-### ⏳ 4. Early Churn Risk
-- First-year churn: **67.41% 🚨**
-
-> New customers are the most vulnerable segment.
+* Short tenure
+* High monthly charges
+* Low engagement
 
 ---
 
-### 💳 5. Customer Value Insight
-- Churned customers have **higher average CLV**
+## 🧠 My Approach
 
-> Losing high-value customers significantly impacts revenue.
+1. Cleaned and prepared dataset
+2. Performed exploratory data analysis (EDA)
+3. Identified churn patterns across segments
+4. Quantified revenue impact of churn
+5. Built Power BI dashboard for insights
 
 ---
 
-## 📊 SQL Analysis Highlights
+## ⚙️ Workflow
 
-- Churn rate calculation  
-- Revenue loss estimation  
-- Customer segmentation (High / Medium / Low value)  
-- Window functions (RANK) for prioritization  
-- Cohort analysis (tenure-based churn)  
-- CLV (Customer Lifetime Value) estimation  
-- Pareto analysis (revenue contribution)  
-- Anomaly detection (high-paying early churners)  
+```id="1jlwmf"
+Raw Data → Data Cleaning → EDA → Churn Analysis → Dashboard → Insights
+```
+
+---
+
+## 🧾 Key SQL Concepts Used
+
+* Aggregations (COUNT, SUM, AVG)
+* Customer segmentation
+* Filtering high-risk groups
+* Revenue impact calculations
+
+---
+
+## 📊 DAX Metrics
+
+```DAX id="p3h1kl"
+Churn Rate = 
+DIVIDE([Churned Customers], [Total Customers])
+```
+
+```DAX id="p9t2sd"
+Revenue Loss = 
+SUMX(Churned_Customers, [Monthly Charges])
+```
+
+---
+
+## 🎯 Business Recommendations
+
+* Improve onboarding for new customers
+* Offer targeted discounts for high-risk segments
+* Focus retention efforts on high-value customers
+* Monitor churn trends regularly
+
+---
+
+## 🛠️ Tech Stack
+
+* SQL
+* Power BI (DAX, Dashboard)
+* Excel / CSV
 
 ---
 
 ## 📂 Project Structure
 
+```id="9slx2o"
+customer-churn-revenue-analysis/
+│
+├── data/
+├── sql/
+├── dashboard/
+│   ├── powerbi.pbix
+│   └── screenshots/
+├── docs/
+├── README.md
+```
+
+---
+
+## 🚀 What Makes This Project Strong
+
+* Focuses on **business impact (revenue loss)**
+* Goes beyond churn prediction → explains **why churn happens**
+* Combines **analysis + visualization + insights**
+
+---
+
+## 💡 One-Line Summary
+
+👉 Built a churn analysis solution to identify high-risk customers and reduce revenue loss through data-driven retention strategies.
+
+---
+
+## 🔗 Connect
+
+* LinkedIn: https://www.linkedin.com/in/satyam-8b105032b
+* GitHub: https://github.com/satyamkr9939-glitch
+
+---
+
+[1]: https://arxiv.org/abs/2304.10604?utm_source=chatgpt.com "Causal Analysis of Customer Churn Using Deep Learning"
