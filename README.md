@@ -1,6 +1,6 @@
 # 📊 Customer Churn & Revenue Impact Analysis (SQL + Power BI)
 
-![Dashboard] 
+![Dashboard] (Customer%20churn%20and%20revenue%20loss%20dashboard.png)
 
 🚀 Analyzed customer churn patterns and identified **high-risk segments impacting revenue**
 💡 Built a data-driven solution to **reduce churn and improve retention strategy**
@@ -45,7 +45,7 @@ Customer acquisition costs are **5–6x higher than retention**, making churn on
 
 ### 👥 Customer Segmentation
 
-![Segment](dashboard/screenshots/segment_analysis.png)
+
 
 * High churn observed in:
 
@@ -58,7 +58,7 @@ Customer acquisition costs are **5–6x higher than retention**, making churn on
 
 ### 📊 Behavioral Drivers
 
-![Drivers](dashboard/screenshots/drivers.png)
+
 
 Key churn drivers:
 
