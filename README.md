@@ -28,9 +28,9 @@ Customer acquisition costs are **5–6x higher than retention**, making churn on
 
 ### 🔴 KPI Snapshot
 
-* Total Customers: XXXX
-* Churned Customers: XXXX
-* Churn Rate: **~XX%**
+* Total Customers: 100000+
+* Churned Customers: 33000+
+* Churn Rate:33%
 
 ---
 
